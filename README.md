@@ -3,6 +3,17 @@
 This project demonstrates **dense 3D reconstruction** of a scene using both **stereo image pairs** and **monocular depth estimation** techniques.  
 It combines traditional computer vision (CV) algorithms with deep learning (MiDaS) to create a comprehensive 3D point cloud of an environment.
 
+## 📸 
+
+| Stereo Image Pair | Matched Features |
+|:-----------------:|:----------------:|
+| <img src="data/images/imagess/000047_11_left.png" width="400"/> | <img src="results/matched_features.png" width="400"/> |
+
+| Monocular Depth Map (MiDaS) | Dense Point Cloud |
+|:---------------------------:|:-----------------:|
+| <img src="results/midas_depth.png" width="400"/> | 3D point cloud displayed in Open3D viewer |
+
+
 ---
 
 ## 📂 Directory Structure
@@ -104,11 +115,11 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
 
 | Stereo Image Pair | Matched Features |
 |:-----------------:|:----------------:|
-| <img src="data/images/imagess/000000_10_left.png" width="400"/> | <img ="results/matched_features.png" width="400"/> |
+| <img src="data/images/imagess/000000_10_left.png" width="400"/> | <img src="results/ss/img_10/figure_1.png" width="400"/> |
 
 | Monocular Depth Map (MiDaS) | Dense Point Cloud |
 |:---------------------------:|:-----------------:|
-| <img src="results/midas_depth.png" width="400"/> | 3D point cloud displayed in Open3D viewer |
+| <img src="results/ss/img_10/figure_2.png" width="400"/> | 3D point cloud displayed in Open3D viewer |
 
 ---
 
