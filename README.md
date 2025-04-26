@@ -7,11 +7,11 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
 
 | Stereo Image Pair | Matched Features |
 |:-----------------:|:----------------:|
-| <img src="data/images/imagess/000047_11_left.png" width="400"/> | <img src="results/matched_features.png" width="400"/> |
+| <img src="data/images/imagess/000047_11_left.png" width="500"/> | <img src="results/matched_features.png" width="500"/> |
 
-| Monocular Depth Map (MiDaS) | Dense Point Cloud |
+| Monocular Depth Map (MiDaS) | 3D Point Cloud |
 |:---------------------------:|:-----------------:|
-| <img src="results/midas_depth.png" width="400"/> | 3D point cloud displayed in Open3D viewer |
+| <img src="results/midas_depth.png" width="500"/> | <img src="results/Picture1_3D_pcl.png" width="500"/> |
 
 
 ---
@@ -90,7 +90,7 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
    - Matched Features
    - Epipolar Lines
    - Depth Map
-   - Sparse and Dense 3D Point Clouds
+   - 3D Point Clouds
 
 ---
 
@@ -115,11 +115,11 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
 
 | Stereo Image Pair | Matched Features |
 |:-----------------:|:----------------:|
-| <img src="data/images/imagess/000000_10_left.png" width="400"/> | <img src="results/ss/img_10/figure_1.png" width="400"/> |
+| <img src="data/images/imagess/000000_10_left.png" width="500"/> | <img src="results/img_10_figure_1.png" width="500"/> |
 
-| Monocular Depth Map (MiDaS) | Dense Point Cloud |
+| Monocular Depth Map (MiDaS) | 3D Point Cloud |
 |:---------------------------:|:-----------------:|
-| <img src="results/ss/img_10/figure_2.png" width="400"/> | 3D point cloud displayed in Open3D viewer |
+| <img src="results/img_10_figure_2.png" width="500"/> |  <img src="results/Picture10_3D_pcl.png" width="500"/> |
 
 ---
 
