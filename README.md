@@ -7,11 +7,11 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
 
 | Stereo Image Pair | Matched Features |
 |:-----------------:|:----------------:|
-| <img src="data/images/imagess/000047_11_left.png" width="400"/> | <img src="results/matched_features.png" width="400"/> |
+| <img src="data/images/imagess/000047_11_left.png" width="500"/> | <img src="results/matched_features.png" width="500"/> |
 
-| Monocular Depth Map (MiDaS) | Dense Point Cloud |
+| Monocular Depth Map (MiDaS) | 3D Point Cloud |
 |:---------------------------:|:-----------------:|
-| <img src="results/midas_depth.png" width="400"/> | 3D point cloud displayed in Open3D viewer |
+| <img src="results/midas_depth.png" width="500"/> | <img src="results/Picture1_3D_pcl.png" width="500"/> |
 
 
 ---
@@ -68,9 +68,6 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
    - Each 2D matched keypoint pair was lifted into 3D space based on camera intrinsics and the estimated relative pose.
 
 
-
-
-
 5. **Dense Depth Map (Stereo Block Matching):**  
    - To go beyond sparse features, I computed dense disparity maps using OpenCV’s Stereo Block Matching technique.
    
@@ -90,9 +87,21 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
    - Matched Features
    - Epipolar Lines
    - Depth Map
-   - Sparse and Dense 3D Point Clouds
+   - 3D Point Clouds
 
 ---
+
+## 📚 Dataset Used
+
+This project utilizes stereo image pairs from the **KITTI 2015 Flow Dataset**, a widely adopted benchmark for optical flow, stereo matching, and 3D scene reconstruction research.
+
+- **Source:** [KITTI 2015 Flow Benchmark](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow)
+- **Relevance:**  
+  The KITTI dataset provides rectified stereo images with known calibration parameters, making it ideal for stereo depth estimation, epipolar geometry verification, and point cloud reconstruction tasks.
+  
+Using this dataset ensures the system was tested on realistic, real-world driving scenarios, critical for developing robotics and autonomous navigation solutions.
+
+--- 
 
 ## 🛠️ Technologies Used
 
@@ -108,6 +117,7 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
   - MiDaS (Monocular Depth Estimation using Transformers and Convolutions)
 - **Libraries:**  
   `OpenCV`, `Open3D`, `NumPy`, `Matplotlib`, `PyTorch`, `timm`
+  
 
 ---
 
@@ -115,13 +125,14 @@ It combines traditional computer vision (CV) algorithms with deep learning (MiDa
 
 | Stereo Image Pair | Matched Features |
 |:-----------------:|:----------------:|
-| <img src="data/images/imagess/000000_10_left.png" width="400"/> | <img src="results/ss/img_10/figure_1.png" width="400"/> |
+| <img src="data/images/imagess/000000_10_left.png" width="500"/> | <img src="results/img_10_figure_1.png" width="500"/> |
 
-| Monocular Depth Map (MiDaS) | Dense Point Cloud |
+| Monocular Depth Map (MiDaS) | 3D Point Cloud |
 |:---------------------------:|:-----------------:|
-| <img src="results/ss/img_10/figure_2.png" width="400"/> | 3D point cloud displayed in Open3D viewer |
+| <img src="results/img_10_figure_2.png" width="500"/> |  <img src="results/Picture10_3D_pcl.png" width="500"/> |
 
 ---
+
 
 ## 📋 How to Run
 
@@ -131,3 +142,27 @@ pip install -r requirements.txt
 
 # Step 2: Run the main script
 python main.py
+
+```
+
+## 🔮 Future Extensions
+
+Several enhancements can be explored to expand the capabilities of this 3D reconstruction system:
+
+- **Real-Time Dense Reconstruction:**  
+  Integrating GPU-accelerated stereo matching or MiDaS inference for real-time 3D scene reconstruction suitable for robotics perception stacks.
+
+- **SLAM Integration:**  
+  Extending the current system into a full **Visual SLAM** pipeline by incorporating frame-to-frame pose tracking and global optimization.
+
+- **Sensor Fusion with LiDAR:**  
+  Combining stereo vision with LiDAR point clouds for improved depth accuracy, robustness under poor lighting, and outdoor navigation.
+
+- **Surface Reconstruction:**  
+  Applying surface meshing algorithms (Poisson Surface Reconstruction, Ball Pivoting) to generate continuous 3D mesh models from point clouds.
+
+- **Semantic Scene Understanding:**  
+  Enhancing the point cloud with semantic labels (ground, vehicles, pedestrians) to enable higher-level reasoning for robotics applications.
+
+
+
