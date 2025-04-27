@@ -9,7 +9,7 @@ Thumbs.db
 *.ckpt
 
 # Ignore results and generated plots
-results/
+
 
 # Ignore large datasets
 data/lidar/
