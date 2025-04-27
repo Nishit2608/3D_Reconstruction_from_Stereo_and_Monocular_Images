@@ -1,0 +1,21 @@
+# Ignore virtual environments
+venv/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.pt
+*.pth
+*.ckpt
+
+# Ignore results and generated plots
+results/
+
+# Ignore large datasets
+data/lidar/
+
+# Ignore PyCharm/VSCode settings
+.idea/
+.vscode/
+
+
